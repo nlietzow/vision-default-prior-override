@@ -1,5 +1,10 @@
 # Vision-Default, Prior-Override
 
+<p align="center">
+  <img src="assets/vision_default_fig.png" width="720"
+       alt="A counterfactual blue strawberry routed through two pathways: the visual-default path answers 'blue', the prior-override path answers 'red', mediated by routing and writing attention heads.">
+</p>
+
 Code for the paper **"Vision-Default, Prior-Override: Causal Mechanisms of
 Perception-Knowledge Conflict in Vision-Language Models."**
 
