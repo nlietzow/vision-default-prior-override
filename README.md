@@ -45,9 +45,9 @@ leaving no genuine perception-knowledge conflict; no manual step is required.
 Qwen2.5-VL 3B, takes one counterfactual example, and shows that ablating a small set
 of promoting attention heads flips the model from the memorized color to the color
 in the image, both in the next-token logits and in generated text. It needs a GPU and
-`HF_TOKEN` but no precomputed outputs. It also runs on Apple Silicon (full precision on
-the MPS backend; the notebook shows the one-cell change) and was validated on an M4. Start
-there before the full pipeline below.
+`HF_TOKEN` but no precomputed outputs. The load cell auto-detects the device, so it also
+runs on Apple Silicon (full precision on the MPS backend); the committed cell outputs were
+produced on an M4. Start there before the full pipeline below.
 
 ## Model configurations
 
