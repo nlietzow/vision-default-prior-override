@@ -78,3 +78,12 @@ class VLMAdapter(ABC):
     @abstractmethod
     def get_image_token_id(self, processor: ProcessorMixin) -> int:
         """Return the image placeholder token ID used by this model."""
+
+    def get_o_proj_module(self, layer):
+        """Return the attention output-projection module for a layer.
+
+        Used by tutorial-style forward-hook interventions. All current
+        families expose it at ``layer.self_attn.o_proj``; override if a
+        future family differs.
+        """
+        return layer.self_attn.o_proj

@@ -39,6 +39,16 @@ from HuggingFace, accessed with your `HF_TOKEN`. Two examples (radish, spider) a
 automatically by the dataset loader because their original and counterfactual colors overlap,
 leaving no genuine perception-knowledge conflict; no manual step is required.
 
+## Tutorial
+
+[`tutorial.ipynb`](tutorial.ipynb) is a short, self-contained walkthrough: it loads
+Qwen2.5-VL 3B, takes one counterfactual example, and shows that ablating a small set
+of promoting attention heads flips the model from the memorized color to the color
+in the image, both in the next-token logits and in generated text. It needs a GPU and
+`HF_TOKEN` but no precomputed outputs. It also runs on Apple Silicon (full precision on
+the MPS backend; the notebook shows the one-cell change) and was validated on an M4. Start
+there before the full pipeline below.
+
 ## Model configurations
 
 The paper covers five configurations. Each family only accepts the sizes it actually ships, so

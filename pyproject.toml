@@ -67,6 +67,13 @@ quote-style = "double"
 indent-style = "space"
 skip-magic-trailing-comma = false
 
+[tool.pytest.ini_options]
+filterwarnings = [
+    # Third-party SWIG/sentencepiece deprecation noise under Python 3.12; not our code.
+    "ignore:builtin type SwigPyPacked has no __module__ attribute:DeprecationWarning",
+    "ignore:builtin type SwigPyObject has no __module__ attribute:DeprecationWarning",
+]
+
 [dependency-groups]
 dev = [
     "pytest>=9.0.3",
