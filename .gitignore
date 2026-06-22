@@ -38,7 +38,8 @@ ENV/
 # macOS
 .DS_Store
 
-# Experiment outputs and generated figures
+# Experiment outputs and generated artifacts
 outputs/
 outputs_local/
+data/
 figures/
