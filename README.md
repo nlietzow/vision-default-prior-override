@@ -6,7 +6,8 @@
 </p>
 
 Code for the paper **"Vision-Default, Prior-Override: Causal Mechanisms of
-Perception-Knowledge Conflict in Vision-Language Models."**
+Perception-Knowledge Conflict in Vision-Language Models"** (Findings of EMNLP 2026).
+Paper: [arXiv:2606.28273](https://arxiv.org/abs/2606.28273)
 
 Vision-language models must reconcile what they see with what they know. Shown a
 counterfactual image (a blue banana, a pink elephant), a model faces a conflict between the
@@ -223,4 +224,17 @@ MIT. See [LICENSE](LICENSE).
 
 ## Citation
 
-The paper is not yet published. A BibTeX entry will be added here on publication.
+To appear in Findings of the Association for Computational Linguistics: EMNLP 2026.
+Until the proceedings are published, please cite the arXiv version:
+
+```bibtex
+@misc{lietzow2026visiondefault,
+  title         = {Vision-Default, Prior-Override: Causal Mechanisms of Perception-Knowledge Conflict in Vision-Language Models},
+  author        = {Lietzow, Niclas and Bitterman, Danielle and Eickhoff, Carsten and Rudman, William and Golovanevsky, Michal},
+  year          = {2026},
+  eprint        = {2606.28273},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2606.28273}
+}
+```
